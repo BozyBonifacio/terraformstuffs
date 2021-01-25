@@ -7,7 +7,7 @@ resource "azurerm_storage_account" "demo" {
 
   network_rules {
     #https://docs.microsoft.com/en-us/azure/azure-monitor/app/export-telemetry#continuous-export-advanced-storage-configuration
-    default_action             = "Deny" 
+    default_action             = "Allow" 
   }
 
   tags = {
