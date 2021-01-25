@@ -4,7 +4,7 @@ terraform {
     resource_group_name  = "TROP-DEVOPS-TERRAFORM-NONPROD"
     storage_account_name = "tfstgbozycmpiac"
     container_name       = "tfstate"
-    key                  = "JvqWzH3U2A7JUslnc1vTI5ovoXFEOVlzHWDmNNBgOwdyoXWGnCv06TZa3zaCF6g7r/XYQrbo4NhlJ6e8l8rAWQ=="
+    key                  = "storagekeygoeshere"
   }
   required_providers {
     azurerm = {
