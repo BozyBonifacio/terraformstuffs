@@ -5,13 +5,13 @@ Required tools
 3. Credentials and details from your azure storage account
 #>
 
-$resourceGroup = "e20-cmp-p-appinsights-rgrp"
-$storageAcName = "e20cmppstg" 
-$storageAcKey = "gLmSalaDWRIDtelZLnnwCWDfQrJc8SzLPefwnNL4kfUM2N2sZ5e4+CmgJlrSy/phib2kmh3H1SUO1VCOex67FA=="
+$resourceGroup = "bozy-demo-appinsights-rg"
+$storageAcName = "bozy-demo-storageaccount" 
+$storageAcKey = "yourstorageaccountkeygoeshere"
 $containerName = "appinsightsexport"
-$appInsightsName = "e20cmppappinsights"
-$subscriptionId = "f2447828-1080-40d5-9acf-e2a174c5b0bb"
-$location = "westeurope"
+$appInsightsName = "bozy-demo-appinsights"
+$subscriptionId = "yoursubscriptioIdgoeshere"
+$location = "southeastasia"
 
 Connect-AzAccount
 Set-AzContext -Subscription $subscriptionId
