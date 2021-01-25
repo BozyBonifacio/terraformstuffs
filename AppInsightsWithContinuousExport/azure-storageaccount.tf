@@ -6,18 +6,12 @@ resource "azurerm_storage_account" "demo" {
   account_replication_type = "LRS"
 
   network_rules {
-    default_action             = "Deny"
-    bypass                     = ["AzureServices"] # see: https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security#exceptions
+    #https://docs.microsoft.com/en-us/azure/azure-monitor/app/export-telemetry#continuous-export-advanced-storage-configuration
+    default_action             = "Deny" 
   }
 
   tags = {
-    "AppID" = "003865"
-    inventory = " {\"Product\":\"cmp\",\"Application\":\"cmp\",\"Environment\":\"dev\",\"Function\":\"storageaccount\"}"
+    "AppID" = "00000"
+    "Environment" = "demo"
   }
-}
-
-resource "azurerm_storage_container" "demo" {
-  name                  = "appinsightsexport"
-  storage_account_name  = azurerm_storage_account.demo.name
-  container_access_type = "private"
 }
