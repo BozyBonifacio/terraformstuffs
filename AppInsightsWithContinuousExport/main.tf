@@ -1,7 +1,7 @@
 terraform {
   required_version = ">= 0.13.0"
   backend "azurerm" {
-    resource_group_name  = "TROP-DEVOPS-TERRAFORM-NONPROD"
+    resource_group_name  = "bozy-demo-appinsights-rg"
     storage_account_name = "tfstgbozycmpiac"
     container_name       = "tfstate"
     key                  = "storagekeygoeshere"
