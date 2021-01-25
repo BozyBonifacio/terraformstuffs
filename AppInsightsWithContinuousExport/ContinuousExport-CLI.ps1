@@ -6,7 +6,7 @@ Required tools
 #>
 
 $resourceGroup = "bozy-demo-appinsights-rg"
-$storageAcName = "bozy-demo-storageaccount" 
+$storageAcName = "bozydemostg" 
 $storageAcKey = "yourstorageaccountkeygoeshere"
 $containerName = "appinsightsexport"
 $appInsightsName = "bozy-demo-appinsights"
